@@ -4,12 +4,12 @@ const display = document.querySelector(".display");
 
 
 btn.addEventListener("click", () => {
-    const a = input.value
-    const spl = a.split("").reverse("").join("")
-    if(spl === a ){
-        display.innerHTML = `Yayyy, ${a} is a Palindrome. Good Job`
+    const inputWord = input.value
+    const inputText = inputWord.split("").reverse("").join("")
+    if(inputText === inputWord ){
+        display.innerHTML = `Yayyy, ${inputWord} is a Palindrome. Good Job`
 
     }else{
-        display.innerHTML = `Sorry, ${a}  is not a Palindrome. Try Again`
+        display.innerHTML = `Sorry, ${inputWord}  is not a Palindrome. Try Again`
     }
 })
